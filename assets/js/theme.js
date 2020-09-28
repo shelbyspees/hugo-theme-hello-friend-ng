@@ -22,4 +22,14 @@ themeToggle.addEventListener("click", () => {
   document.body.classList.contains("dark-theme")
     ? metaThemeColor.setAttribute("content", "#252627")
     : metaThemeColor.setAttribute("content", "#fafafa");
+  location.reload(true);
 });
+
+var metaTwitterTheme = document.getElementsByTagName('meta')["twitter:widgets:theme"];
+console.log(metaTwitterTheme);
+
+if (document.body.classList.contains("dark-theme")) {
+  metaTwitterTheme.setAttribute("content", "dark")
+} else {
+  metaTwitterTheme.setAttribute("content", "")
+}
