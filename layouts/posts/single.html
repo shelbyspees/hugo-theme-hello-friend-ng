@@ -2,7 +2,7 @@
   <main class="post">
 
     {{ with .Params.Cover }}
-      <img src="/{{ . }}" class="post-cover"/>
+      <img src="{{ . | relURL }}" class="post-cover"/>
     {{ end }}
 
     <div class="post-info">
