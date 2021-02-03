@@ -1,0 +1,37 @@
+{{ define "main" }}
+    <main class="post">
+
+        {{ with .Params.Cover }}
+            <img src="{{ . | relURL }}" class="post-cover"/>
+        {{ end }}
+
+        <div class="post-info">
+            {{ if .IsTranslated }}
+                {{ i18n "postAvailable" }}
+                {{ range .Translations }}
+                    <a href="{{ .Permalink }}">
+                        <span class="flag flag-icon flag-icon-{{ index $.Site.Data.langFlags (.Lang) }} flag-icon-squared"></span></a>
+                {{ end}}
+            {{ end }}
+        </p>
+    </div>
+
+    <article>
+        <h1 class="post-title">
+            <a href="{{ .Permalink }}">{{ .Title | markdownify }}</a>
+        </h1>
+
+        <div class="post-content">
+            {{ .Content }}
+        </div>
+
+        {{ with .Site.Params.links }}
+        {{ range . -}}
+        <div>
+            <a class="button links" href="{{ .url }}" target="_blank" rel="noopener">{{ .name }}</a>
+        </div>
+        {{ end }}
+        {{ end }}
+    </article>
+</main>
+{{ end }}

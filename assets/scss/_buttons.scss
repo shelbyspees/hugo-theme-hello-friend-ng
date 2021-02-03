@@ -97,3 +97,11 @@ a.button {
     }
   }
 }
+
+// specific to /links page, see layouts/_default/links.html
+a.links {
+  max-width: 100%;
+  &:hover {
+    text-decoration: underline;
+  }
+}
