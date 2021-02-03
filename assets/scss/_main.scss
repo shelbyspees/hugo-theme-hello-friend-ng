@@ -123,6 +123,7 @@ img {
     border-radius: 50%;
     max-width: 25%;
     margin: auto;
+    margin-top: 4rem;
   }
 }
 
@@ -276,7 +277,6 @@ ol ol {
 }
 
 .content {
-  display: flex;
   flex-direction: column;
   flex: 1 auto;
   align-items: center;
