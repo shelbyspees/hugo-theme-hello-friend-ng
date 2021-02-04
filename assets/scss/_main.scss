@@ -51,12 +51,12 @@ h1 {
   border-bottom: 2px solid $light-border-color;
 
   .dark-theme & {
-    border-bottom: 2px solid #4a4b50;
+    border-bottom: 2px solid $dark-border-color;
   }
-}
 
-h1.site-title {
-  border-bottom: 0px;
+  &.site-title {
+    border-bottom: none;
+  }
 }
 
 h2 {
