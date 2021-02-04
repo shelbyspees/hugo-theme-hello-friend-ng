@@ -52,7 +52,11 @@
     }
 
     &-item {
-      border-bottom: 1px grey dashed;
+      border-bottom: 1px dashed $light-border-color;
+
+      .dark-theme & {
+        border-bottom: 1px dashed $dark-border-color;
+      }
 
       a {
         display: flex;
@@ -60,6 +64,10 @@
         align-items: baseline;
         padding: 12px 0;
         text-decoration: none;
+
+        &:hover{
+          text-decoration: underline;
+        }
       }
     }
 
