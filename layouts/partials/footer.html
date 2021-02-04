@@ -1,4 +1,15 @@
 <footer class="footer">
+    {{ if .Site.Params.footerSocial }}
+    <div class="footer__inner">
+        <div class="footer__content">
+            {{- with .Site.Params.social }}
+                <div>
+                    {{ partial "social-icons.html" . }}
+                </div>
+            {{- end }}
+        </div>
+    </div>
+    {{ end }}
     <div class="footer__inner">
         <div class="footer__content">
             <span>&copy; {{ now.Format "2006" }}</span>
