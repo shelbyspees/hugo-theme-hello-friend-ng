@@ -34,12 +34,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  line-height: 1;
+  width: 36px;
+  height: 36px;
   cursor: pointer;
 }
 
 .theme-toggler {
   fill: currentColor;
+  padding: 0;
 }
 
 .unselectable {
