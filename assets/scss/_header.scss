@@ -39,6 +39,16 @@
   cursor: pointer;
 }
 
+li.theme-toggle-divider {
+  border-left: 1px solid;
+  padding-left: 24px;
+
+  @media #{$media-size-phone} {
+    border: none;
+    padding: 0;
+  }
+}
+
 .theme-toggler {
   fill: currentColor;
   padding: 0;

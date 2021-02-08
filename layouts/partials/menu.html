@@ -4,5 +4,6 @@
         {{ range .Site.Menus.main -}}
             <li><a href="{{ .URL | absLangURL }}">{{ .Name }}</a></li>
         {{- end }}
+        <li class="theme-toggle-divider"><span class="theme-toggle unselectable">{{ partial "theme-icon.html" . }}</span> </li>
     </ul>
 </nav>
