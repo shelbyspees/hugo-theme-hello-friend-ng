@@ -127,6 +127,10 @@ img {
     max-width: 25%;
     margin: auto;
     margin-top: 4em;
+
+    @media #{$media-size-phone} {
+      max-width: 50%;
+    }
   }
 }
 
