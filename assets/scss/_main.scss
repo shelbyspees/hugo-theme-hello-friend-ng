@@ -30,9 +30,9 @@ body {
   min-height: 100vh;
   flex-direction: column;
 
-  // @media #{$media-size-phone} {
-  //   font-size: 1em;
-  // }
+  @media #{$media-size-phone} {
+    font-size: 1.4rem;
+  }
 
   &.dark-theme {
     background-color: $dark-background;
@@ -84,23 +84,23 @@ h4 {
   font-size: 1.125em;
 }
 
-// @media #{$media-size-phone} {
-//   h1 {
-//     font-size: 2em;
-//   }
+@media #{$media-size-phone} {
+  h1 {
+    font-size: 2.2em;
+  }
 
-//   h2 {
-//     font-size: 1.4em;
-//   }
+  h2 {
+    font-size: 1.7em;
+  }
 
-//   h3 {
-//     font-size: 1.15em;
-//   }
+  h3 {
+    font-size: 1.3em;
+  }
 
-//   h4 {
-//     font-size: 1.125em;
-//   }
-// }
+  h4 {
+    font-size: 1.125em;
+  }
+}
 
 a {
   color: inherit;
