@@ -14,7 +14,7 @@ html {
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Inter UI', -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI",  Helvetica, Arial, sans-serif;
+  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI",  Helvetica, Arial, sans-serif;
   font-display: auto;
   font-size: 1.5rem;
   line-height: 1.54;
@@ -126,7 +126,6 @@ img {
     border-radius: 50%;
     max-width: 25%;
     margin: auto;
-    margin-top: 4em;
 
     @media #{$media-size-phone} {
       max-width: 50%;
@@ -194,7 +193,7 @@ figure {
 }
 
 code {
-  font-family: Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;
+  font-family: "PT Mono",Monaco,Andale Mono,Ubuntu Mono,monospace;
   font-display: auto;
   font-feature-settings: normal;
   background: $light-background-secondary;
@@ -212,7 +211,7 @@ pre {
   background: #212020;
   padding: 10px 10px 10px 20px;
   border-radius: 8px;
-  font-size: .95rem;
+  font-size: .95em;
   overflow: auto;
 
   @media #{$media-size-phone} {
