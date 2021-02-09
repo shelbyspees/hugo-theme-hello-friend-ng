@@ -10,10 +10,10 @@
   }
 
   &:not(:last-of-type) {
-    border-bottom: 1px solid $light-border-color;
+    border-bottom: 1px solid $light-accent-color;
 
     .dark-theme & {
-      border-color: $dark-border-color;
+      border-color: $dark-accent-color;
     }
   }
 
@@ -52,10 +52,10 @@
     }
 
     &-item {
-      border-bottom: 1px dashed $light-border-color;
+      border-bottom: 1px dashed $light-accent-color;
 
       .dark-theme & {
-        border-bottom: 1px dashed $dark-border-color;
+        border-bottom: 1px dashed $dark-accent-color;
       }
 
       a {

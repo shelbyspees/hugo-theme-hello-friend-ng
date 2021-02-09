@@ -1,10 +1,10 @@
 .menu {
-  background: #fafafa;
+  background: $light-background-secondary;
   margin-right: 18px;
   z-index: 9999;
 
   .dark-theme & {
-    background: #252627;
+    background: $dark-background-secondary;
   }
 
   @media #{$media-size-phone} {

@@ -142,7 +142,7 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  background: $light-background-secondary;
+  background: $light-accent-color;
   font-size: 1em;
   font-weight: 600;
   border-radius: 8px;
@@ -152,7 +152,7 @@
   appearance: none;
 
   .dark-theme & {
-    background: $dark-background-secondary;
+    background: $dark-accent-color;
   }
 
   + .button {

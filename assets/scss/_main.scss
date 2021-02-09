@@ -50,13 +50,13 @@ h2, h3, h4, h5, h6 {
 
 h1 {
   font-size: 2.625em;
-  border-bottom: 2px solid $light-border-color;
+  border-bottom: 2px solid $light-accent-color;
   margin: 0.5em 0;
   padding-bottom: 0.15em;
   line-height: 1.25;
 
   .dark-theme & {
-    border-bottom: 2px solid $dark-border-color;
+    border-bottom: 2px solid $dark-accent-color;
   }
 
   &.site-title {
@@ -69,10 +69,10 @@ h1 {
 h2 {
   font-size: 2em;
   padding-top: .5em;
-  border-bottom: 1px solid $light-border-color;
+  border-bottom: 1px solid $light-accent-color;
 
   .dark-theme & {
-    border-bottom: 1px solid $dark-border-color;
+    border-bottom: 1px solid $dark-accent-color;
   }
 }
 
@@ -298,11 +298,11 @@ ol ol {
 hr {
   width: 100%;
   border: none;
-  background: $light-border-color;
+  background: $light-accent-color;
   height: 1px;
 
   .dark-theme & {
-    background: $dark-border-color;
+    background: $dark-accent-color;
   }
 }
 
