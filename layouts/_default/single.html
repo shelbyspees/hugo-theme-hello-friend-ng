@@ -1,43 +1,39 @@
 {{ define "main" }}
-    <main class="post">
+<main class="post">
 
-        {{ with .Params.Cover }}
-            <img src="{{ . | relURL }}" class="post-cover"/>
-        {{ end }}
+    {{ with .Params.Cover }}
+        <img src="{{ . | relURL }}" class="post-cover"/>
+    {{ end }}
 
-        <div class="post-info">
-            {{ if .IsTranslated }}
-                {{ i18n "postAvailable" }}
-                {{ range .Translations }}
-                    <a href="{{ .Permalink }}">
-                        <span class="flag flag-icon flag-icon-{{ index $.Site.Data.langFlags (.Lang) }} flag-icon-squared"></span></a>
-                {{ end}}
-            {{ end }}
-        </p>
-    </div>
+    {{ if .IsTranslated }}
+    <section class="post-info">
+        {{ i18n "postAvailable" }}
+        {{ range .Translations }}
+            <a href="{{ .Permalink }}">
+                <span class="flag flag-icon flag-icon-{{ index $.Site.Data.langFlags (.Lang) }} flag-icon-squared"></span></a>
+        {{ end}}
+    </section>
+    {{ end }}
+    <h1 class="post-title">
+        <a href="{{ .Permalink }}">{{ .Title | markdownify }}</a>
+    </h1>
 
-    <article>
-        <h1 class="post-title">
-            <a href="{{ .Permalink }}">{{ .Title | markdownify }}</a>
-        </h1>
+    {{ if .Params.toc }}
+        <hr/>
+        <aside id="toc">
+            <div class="toc-title">{{ i18n "tableOfContents" }}</div>
+            {{ .TableOfContents }}
+        </aside>
+        <hr/>
+    {{ end }}
 
-        {{ if .Params.toc }}
-            <hr/>
-            <aside id="toc">
-                <div class="toc-title">{{ i18n "tableOfContents" }}</div>
-                {{ .TableOfContents }}
-            </aside>
-            <hr/>
-        {{ end }}
-
-        <div class="post-content">
-            {{ .Content }}
-        </div>
+    <article class="post-content">
+        {{ .Content }}
     </article>
 
     <hr/>
 
-    <div class="post-info">
+    <section class="post-info">
         {{ partial "tags.html" . }}
         {{ partial "categories.html" . }}
 
@@ -55,6 +51,6 @@
                 {{ end }}
             </p>
         {{- end }}
-    </div>
+    </section>
 </main>
 {{ end }}
