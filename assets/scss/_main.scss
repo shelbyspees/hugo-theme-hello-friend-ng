@@ -16,7 +16,7 @@ body {
   padding: 0;
   font-family: $body-font;
   font-display: auto;
-  font-size: 22px;
+  font-size: $base-font-size;
   line-height: 1.54;
   background-color: $light-background;
   color: $light-color;
