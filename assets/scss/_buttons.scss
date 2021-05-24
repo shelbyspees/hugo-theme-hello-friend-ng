@@ -98,7 +98,12 @@ a.button {
   }
 }
 
-// specific to /links page, see layouts/_default/links.html
+// specific to `links` shortcode, see layouts/shortcodes/links.html
+ul.links {
+  list-style-type: none;
+  margin-left: auto;
+}
+
 a.links {
   max-width: 100%;
   padding: 1em 0;

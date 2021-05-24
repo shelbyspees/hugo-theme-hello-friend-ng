@@ -1,0 +1,9 @@
+{{ with .Site.Data.links }}
+<ul class="links">
+    {{ range . -}}
+    <li>
+        <a class="button links" href="{{ .url }}" target="_blank" rel="noopener">{{ .name }}</a>
+    </li>
+    {{ end }}
+</ul>
+{{ end }}
